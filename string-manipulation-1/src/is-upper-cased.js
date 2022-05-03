@@ -1,6 +1,6 @@
 /* exported isUpperCased */
 function isUpperCased(word) {
-  if (word === word.toUpperCase()) {
+  if (word.toUpperCase() === word) {
     return true;
   } else {
     return false;

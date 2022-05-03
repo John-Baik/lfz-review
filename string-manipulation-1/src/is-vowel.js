@@ -1,13 +1,13 @@
 /* exported isVowel */
-function isVowel(char) {
-  let vowel = {
+function isVowel(character) {
+  const vowels = {
     a: true,
     e: true,
     i: true,
     o: true,
     u: true
   };
-  if (vowel[char.toLowerCase()]) {
+  if (vowels[character.toLowerCase()]) {
     return true;
   } else {
     return false;

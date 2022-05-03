@@ -1,8 +1,8 @@
 /* exported reverseWord */
 function reverseWord(word) {
-  var string = '';
+  let reversedString = '';
   for (let i = word.length - 1; i >= 0; i--) {
-    string += word[i];
+    reversedString += word[i];
   }
-  return string;
+  return reversedString;
 }
