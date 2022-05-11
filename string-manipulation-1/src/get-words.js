@@ -3,6 +3,7 @@ function getWords(string) {
   if (!string) {
     return [];
   } else {
-    return string.split(' ');
+  const splitArray = string.split(' ');
+  return splitArray;
   }
 }
