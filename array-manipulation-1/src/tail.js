@@ -1,8 +1,8 @@
 /* exported tail */
 function tail(array) {
-  const tailArray = [];
-  for (var i = 1; i < array.length; i++) {
-    tailArray.push(array[i]);
+  const newArray = [];
+  for (let i = 1; i < array.length; i++) {
+    newArray.push(array[i]);
   }
-  return tailArray;
+  return newArray;
 }
