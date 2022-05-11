@@ -1,11 +1,14 @@
 /* exported capitalize */
 function capitalize(word) {
-  let lowerCase = word.toLowerCase();
-  let array = lowerCase.split('');
-  let upperCaseLetter = lowerCase[0].toUpperCase();
-  array[0] = upperCaseLetter;
-  const capitalized = array.join('');
-  return capitalized;
+  if (word.length < 1) {
+    return word.toUpperCase();
+  } else {
+    const lowerCaseWord = word.toLowerCase().substring(1);
+    const upperCaseFirstLetter = word[0].toUpperCase();
+    const final = upperCaseFirstLetter + lowerCaseWord;
+    console.log(final);
+    return final;
+  }
 }
 
 

@@ -7,9 +7,9 @@ function isVowel(character) {
     o: true,
     u: true
   };
-  if (vowels[character.toLowerCase()]) {
+  const lowerCaseLetter = character.toLowerCase();
+  if (vowels[lowerCaseLetter]) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }

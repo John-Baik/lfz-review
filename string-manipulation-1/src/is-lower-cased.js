@@ -1,8 +1,7 @@
 /* exported isLowerCased */
 function isLowerCased(word) {
-  if (word.toLowerCase() === word) {
+  if (word === word.toLowerCase()) {
     return true;
-  } else {
-    return false;
   }
+   return false;
 }
