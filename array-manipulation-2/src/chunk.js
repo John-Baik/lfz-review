@@ -12,7 +12,7 @@ function chunk(array, size) {
 
 
 
-
+//
 // let newArray = [];
 // let miniArray = [];
 // let count = 1;
