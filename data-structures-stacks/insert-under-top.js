@@ -1,11 +1,10 @@
 /* exported insertUnderTop */
 
 function insertUnderTop(stack, value) {
-  const top = stack.pop();
-  if (top === undefined) {
+  if (stack.peek() === undefined) {
     return;
   }
+  let first = stack.pop();
   stack.push(value);
-  stack.push(top);
-
+  stack.push(first);
 }

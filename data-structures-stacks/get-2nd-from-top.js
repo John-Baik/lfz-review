@@ -1,11 +1,11 @@
 /* exported get2ndFromTop */
 
 function get2ndFromTop(stack) {
-  const top = stack.pop();
-  const second = stack.peek();
-  if (top === undefined) {
-    return undefined;
+  if (stack.peek() === undefined) {
+    return;
   }
-  stack.push(top);
+  let first = stack.pop();
+  let second = stack.peek();
+  stack.push(first);
   return second;
 }
