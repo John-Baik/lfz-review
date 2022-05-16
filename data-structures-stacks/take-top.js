@@ -1,5 +1,8 @@
 /* exported takeTop */
 
 function takeTop(stack) {
-  return stack.pop();
+  if (stack.peek() === undefined) {
+    return;
+  }
+  return stack.pop();;
 }
