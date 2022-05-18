@@ -1,18 +1,19 @@
 /* exported takeSmaller */
 
 function takeSmaller(queue) {
-  if (queue.peek() === undefined) {
+  let newArray= [];
+  let first = queue.dequeue();
+  if (first === undefined) {
     return;
   }
-  const first = queue.dequeue();
-  if (queue.peek() === undefined) {
+  let second = queue.dequeue();
+  if (second === undefined) {
     return first;
   }
-  const second = queue.dequeue();
-  if (first < second) {
-    queue.enqueue(second);
-    return first;
-  }
-  queue.enqueue(first);
-  return second;
+  newArray.push(first, second);
+  let smallest = newArray.sort(function(a, b) {
+    return a - b;
+  });
+  queue.enqueue(newArray[1]);
+  return newArray[0];
 }
