@@ -1,15 +1,14 @@
 /* exported take2nd */
 
 function take2nd(queue) {
-  if (queue.peek() === undefined) {
+  let front = queue.dequeue();
+  if (front === undefined) {
     return;
   }
-  const first = queue.dequeue();
-  if (queue.peek() === undefined) {
-    return first;
+  let second = queue.dequeue();
+  if (second === undefined) {
+    return front
   }
-  const second = queue.peek();
-  queue.enqueue(first);
-  queue.dequeue();
+  queue.enqueue(front);
   return second;
 }

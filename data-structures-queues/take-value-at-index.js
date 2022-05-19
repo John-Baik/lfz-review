@@ -5,8 +5,8 @@ function takeValueAtIndex(queue, index) {
     return;
   }
   while (index > 0) {
-    const first = queue.dequeue();
-    queue.enqueue(first);
+    let front = queue.dequeue();
+    queue.enqueue(front);
     index--;
   }
   return queue.dequeue();
