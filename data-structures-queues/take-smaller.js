@@ -17,3 +17,5 @@ function takeSmaller(queue) {
   queue.enqueue(newArray[1]);
   return newArray[0];
 }
+
+//
