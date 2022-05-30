@@ -2,8 +2,8 @@
 
 function updateNext(list, value) {
   if (list.next === null) {
-    return list;
+    return;
+  } else {
+    list.next.data = value;
   }
-  list.next.data = value;
-  //
 }
