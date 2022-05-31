@@ -1,9 +1,8 @@
 /* exported updateNext */
 
 function updateNext(list, value) {
-  if (list.next === null) {
+  if (!list.next) {
     return;
-  } else {
-    list.next.data = value;
   }
+  list.next.data = value;
 }
