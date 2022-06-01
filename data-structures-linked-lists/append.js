@@ -6,5 +6,4 @@ function append(list, value) {
     list = list.next;
   }
   list.next = new LinkedList(value);
-  console.log(list.print());
 }

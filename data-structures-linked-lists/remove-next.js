@@ -1,10 +1,9 @@
 /* exported removeNext */
 
 function removeNext(list) {
-  if (list.next === null) {
+  if (!list.next) {
     return;
-  } else {
-    const third = list.next.next;
-    list.next = third;
   }
+  const third = list.next.next;
+  list.next = third;
 }
