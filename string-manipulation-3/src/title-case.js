@@ -54,6 +54,5 @@ function titleCase(string) {
       splitArray[i] = splitArray[i] + ':';
     }
   }
-  console.log(splitArray.join(' '))
   return splitArray.join(' ');
 }
