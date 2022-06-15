@@ -10,7 +10,7 @@ function difference(first, second) {
     if (Object.values(obj).includes(index)) {
       blocked[index] = true;
 
-      delete obj[index];
+      delete obj[];  // delete using index, not value in the brackets
     } else {
       if (!blocked[index]) {
         obj[i] = index;
@@ -19,4 +19,5 @@ function difference(first, second) {
     i++;
   });
   console.log(obj)
+
 }
