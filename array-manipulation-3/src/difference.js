@@ -18,6 +18,6 @@ function difference(first, second) {
     }
     i++;
   });
-  console.log(obj)
+  console.log('')
 
 }
