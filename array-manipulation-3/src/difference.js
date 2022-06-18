@@ -18,6 +18,5 @@ function difference(first, second) {
     }
     i++;
   });
-  console.log(''as)
 
 }
