@@ -1,14 +1,13 @@
 /* exported unique */
 function unique(array) {
-  let obj = {};
-  const newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    if (!Object.values(obj).includes(array[i])) {
-      obj[i] = array[i];
+  let repeat = {};
+  let finalArray = [];
+  for (let word of array) {
+    if (repeat[word]) {
+      continue;
     }
+    repeat[word] = true;
+    finalArray.push(word);
   }
-  for (let property in obj) {
-    newArray.push(obj[property]);
-  }
-  return newArray
+  return finalArray;
 }

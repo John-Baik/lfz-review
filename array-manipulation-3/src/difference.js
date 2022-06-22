@@ -1,23 +1,18 @@
 /* exported difference */
 function difference(first, second) {
-  let join = first.join(' ') + ' ' + second.join(' ');
-  let splitArray = join.split(' ');
-  let obj = {};
-  let blocked = {};
-  let i = 0;
-
-  splitArray.forEach(index => {
-    if (Object.values(obj).includes(index)) {
-      blocked[index] = true;
-
-      delete obj[];  // delete using index, not value in the brackets
-    } else {
-      if (!blocked[index]) {
-        obj[i] = index;
-      }
+  let repeat = {};
+  let newArray = [];
+  for (let i = 0; i < first.length; i++) {
+    if (second.includes(first[i])) {
+      continue;
     }
-    i++;
-  });
-  console.log(as)
-
+    newArray.push(first[i])
+  }
+  for (let i = 0; i < second.length; i++) {
+    if (first.includes(second[i])) {
+      continue;
+    }
+    newArray.push(second[i])
+  }
+  return newArray;
 }
