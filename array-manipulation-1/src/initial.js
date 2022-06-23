@@ -1,8 +1,8 @@
 /* exported initial */
-function initial(array) {
-  const newArray = [];
-  for (let i = 0; i < array.length - 1; i++) {
-    newArray.push(array[i]);
+function initial(array){
+  let yeeArray = [];
+  for(let i = 0; i < array.length - 1; i++) {
+    yeeArray.push(array[i]);
   }
-  return newArray;
+  return yeeArray;
 }
