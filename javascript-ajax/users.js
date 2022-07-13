@@ -1,8 +1,8 @@
-let list = document.querySelector('ul');
-console.log(list)
+// let list = document.querySelector('ul');
+// console.log(list)
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://jsonplaceholder.typicode.com/users');
+request.open('GET', 'https://jhttps://valorant-api.com/v1/agentssonplaceholder.typicode.com/users');
 request.responseType = 'json';
 request.addEventListener('load', function () {
   console.log(request.status);
@@ -15,3 +15,14 @@ request.addEventListener('load', function () {
   })
 });
 request.send();
+
+
+
+var request = new XMLHttpRequest();
+request.open('GET', URL);
+request.responseType = 'json';
+request.addEventListener('load', () => {
+  console.log(request.status);
+  console.log(request.response);
+});
+request.send()
