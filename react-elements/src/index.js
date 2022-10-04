@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const h1 = React.createElement('h1', null, 'Hello there!')
+const h1 = React.createElement('h1', null, 'Hello World');
+// console.log(h1);
 
 ReactDOM.render(h1, document.getElementById('root'));
