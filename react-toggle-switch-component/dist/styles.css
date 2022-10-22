@@ -1,0 +1,39 @@
+.container {
+  border: solid;
+  padding: 5px;
+  width: 36px;
+  height: 19px;
+  display: flex;
+  border-radius: 42%;
+  align-items: center;
+}
+
+.green {
+  background-color: green;
+}
+
+.off {
+  left: -19px;
+}
+
+.on {
+  left: 20px;
+}
+
+#circle {
+  border: solid;
+  position: relative;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  transition: 0.4s;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
