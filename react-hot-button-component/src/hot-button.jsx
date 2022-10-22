@@ -1,37 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      clicks: 0
-    };
+export function Button() {
+  const [clicks, setCount] = useState(0);
+  let color = '';
+  if (clicks < 4) {
+    color = 'cold';
+  } else if (clicks < 7) {
+    color = 'cool';
+  } else if (clicks < 9) {
+    color = 'tepid';
+  } else if (clicks < 12) {
+    color = 'warm';
+  } else if (clicks < 16) {
+    color = 'hot';
+  } else {
+    color = 'nuclear';
   }
-
-  handleClick() {
-    this.setState({ clicks: this.state.clicks + 1 });
-
-  }
-
-  render() {
-    let color = '';
-    const clicks = this.state.clicks;
-    if (clicks < 4) {
-      color = 'cold';
-    } else if (clicks < 7) {
-      color = 'cool';
-    } else if (clicks < 9) {
-      color = 'tepid';
-    } else if (clicks < 12) {
-      color = 'warm';
-    } else if (clicks < 16) {
-      color = 'hot';
-    } else {
-      color = 'nuclear';
-    }
-    return <button className={color} onClick={this.handleClick}>Button</button>;
-  }
+  return (
+  <button className={color} onClick={() => setCount(clicks + 1)}>Hot Button</button>
+  );
 }
-
-export default Button;
