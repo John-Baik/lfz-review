@@ -1,39 +1,37 @@
-.container {
+#box {
   border: solid;
-  padding: 5px;
-  width: 36px;
-  height: 19px;
+  height: 10px;
+  width: 30px;
   display: flex;
-  border-radius: 42%;
   align-items: center;
-}
-
-.green {
-  background-color: green;
-}
-
-.off {
-  left: -19px;
-}
-
-.on {
-  left: 20px;
+  border-radius: 10px;
 }
 
 #circle {
   border: solid;
-  position: relative;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  transition: 0.4s;
+  height: 15px;
+  width: 15px;
   background-color: white;
+  position: relative;
 }
 
-.flex {
+.active {
+  background-color: green;
+}
+
+.off {
+  left: 15px;
+}
+
+.on {
+  right: 3px;
+}
+
+section {
   display: flex;
 }
 
-.center {
-  justify-content: center;
+p {
+  margin-block-start: 0;
 }

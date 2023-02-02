@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 class CustomButton extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = { isClicked: true };
+    this.state = {
+      isClicked: false
+    };
   }
 
   handleClick() {
@@ -13,8 +14,11 @@ class CustomButton extends React.Component {
   }
 
   render() {
-    return <button onClick={this.handleClick}>{this.state.isClicked ? 'First' : 'Second'}</button>;
+    return <button onClick={this.handleClick}>{this.state.isClicked ? 'on' : 'off'}</button>;
   }
+
 }
 
 ReactDOM.render(<CustomButton />, document.getElementById('root'));
+
+ReactDOM.render(<CustomButton/>, document.getElementById('root'));
