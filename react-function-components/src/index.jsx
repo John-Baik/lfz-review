@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function CustomButton(props) {
-  return <>
-    <h1>Testing!1</h1>
-    <button>Click Me!</button>
-    </>;
+function CustomButton() {
+  return <button>C!</button>;
 }
 
-ReactDOM.render(<CustomButton />, document.getElementById('root'));
+// class Welcome extends React.Component {
+//   render() {
+//     return <button>works</button>;
+//   }
+// }
+
+ReactDOM.render(<CustomButton />, document.querySelector('#root'));
