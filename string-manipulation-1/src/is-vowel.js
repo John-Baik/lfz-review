@@ -7,18 +7,17 @@ function isVowel(character) {
     o: true,
     u: true
   };
-  const lowerCaseLetter = character.toLowerCase();
-  if (vowels[lowerCaseLetter]) {
+  if (vowels[character.toLowerCase()]) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
-
 
 // const newCharacter = character.toLowerCase();
 // switch (newCharacter) {
-  //     return true;
-  //     break;
+//     return true;
+//     break;
 //   case 'a':
 //   case 'e':
 //     return true;

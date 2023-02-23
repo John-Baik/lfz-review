@@ -1,8 +1,8 @@
 /* exported getValues */
 function getValues(object) {
   const array = [];
-  for (const property in object) {
-    array.push(object[property]);
+  for (const keys in object) {
+    array.push(object[keys]);
   }
   return array;
 }
