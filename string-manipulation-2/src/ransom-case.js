@@ -3,11 +3,9 @@ function ransomCase(string) {
   let newString = '';
   for (let i = 0; i < string.length; i++) {
     if (i % 2 === 0) {
-      let letterLower = string[i].toLowerCase();
-      newString += letterLower;
+      newString += string[i].toLowerCase();
     } else {
-      let letterUpper = string[i].toUpperCase();
-      newString += letterUpper;
+      newString += string[i].toUpperCase();
     }
   }
   return newString;

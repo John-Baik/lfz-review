@@ -4,50 +4,39 @@
     <title>HTML Forms</title>
   </head>
   <body>
-    <h1>Coding Form!</h1>
+    <h1>Coding Form</h1>
     <form>
       <div>
-        <label for="email-form">Email</label>
-        <input type="email" id="email-form">
+        <label for="email">Email
+          <input type="email" id="email">
+        </label>
       </div>
       <div>
-        <label for="dropdown-form">Why is coding cool?</label>
-      </div>
-      <div>
-        <select name="select-form" id="dropdown-form">
-          <option>Please select an option</option>
+        <label for="dropdown">Why is Coding cool?</label>
+        <select name="reasons" id="dropdown">
+          <option value="Select an option">Select an option</option>
           <option value="Because it's interesting">Because it's interesting</option>
-          <option value="Because it's cool">Because it's cool</option>
           <option value="Because it's powerful">Because it's powerful</option>
+          <option value="Because it's fun">Because it's fun</option>
         </select>
       </div>
       <div>
-        <label>Favorite Language (choose one)</label>
+        <label>Favorite Language (Choose One)<br></label>
+        <input type="radio" id="html" name="fav" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="CSS" name="fav" value="CSS">
+        <label for="CSS">CSS</label>
+        <input type="radio" id="javascript" name="fav" value="JavaScript">
+        <label for="javascript">JavaScript</label>
       </div>
       <div>
-        <label for="html">
-          <input type="radio" id="html" name="fav_language" value="HTML">HTML
-        </label>
-        <label for="css">
-          <input type="radio" id="css" value="CSS" name="fav_language">CSS
-        </label>
-        <label for="javascript">
-          <input type="radio" id="javascript" value="JavaScript" name="fav_language">JavaScript
-        </label>
+        <label>Would you like to sign up for more information?<br></label>
+        <input type="checkbox" id="sign-up">
+        <label for="sign-up">Sign me up!</label>
       </div>
       <div>
-        <label for="info" >Would you like to sign up for more information?</label>
-      </div>
-      <div>
-        <label for="info">
-          <input type="checkbox" id="info" value="Sign me Up!">Sign me Up!
-        </label>
-      </div>
-      <div>
-        <label for="text-box">Comments</label>
-      </div>
-      <div>
-        <textarea id="text-box" name="text-box" rows="7" cols="20"></textarea>
+        <label for="comments">Comments<br></label>
+        <textarea id="comments" rows="7"></textarea>
       </div>
       <div>
         <input type="submit" value="Submit">
